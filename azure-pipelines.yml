@@ -3,9 +3,7 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-parameters:
-  param: []
-
 steps:
-  - ${{ each p in parameters.param }}:
-    - script: 'echo ${{ p }}'
+  - template: azure-template.yml
+    parameters:
+      param: ["a", "b" ]
