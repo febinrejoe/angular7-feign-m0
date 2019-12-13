@@ -3,4 +3,4 @@ parameters:
   
 steps:
   - ${{ each p in parameters.param }}:
-    - script: 'echo ${{ p }}
+    - script: 'echo ${{ p }}'
